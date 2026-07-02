@@ -1,0 +1,22 @@
+# System files
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# IDE and tool configs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Temporary agents directories
+.agents/
+.gemini/
+scratch/
+temp/
+tmp/
+node_modules/
+package-lock.json

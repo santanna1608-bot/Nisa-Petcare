@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Nisa PetCare | Banho e Tosa & Estética Canina na Vila Antonieta, SP</title>
+  <meta name="description" content="Estética canina especializada e banho e tosa humanizado na Vila Antonieta, São Paulo. O cuidado e o 'AUmor' que seu pet merece. Agende um banho para seu melhor amigo!">
+  <meta name="keywords" content="pet shop, banho e tosa, estética canina, banho humanizado, tosa higiênica, Vila Antonieta, Zona Leste, São Paulo, cães, Nisa PetCare">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nisapetcare.com.br/">
+  <meta property="og:title" content="Nisa PetCare | Banho e Tosa & Estética Canina">
+  <meta property="og:description" content="Estética canina especializada e banho e tosa humanizado na Vila Antonieta, São Paulo. O cuidado e o 'AUmor' que seu pet merece.">
+  <meta property="og:image" content="Mídias/Nisa PetCare - Banho e Tosa  Estética Canina (8).jpeg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="Mídias/Nisa PetCare - Banho e Tosa  Estética Canina (8).jpeg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              light: '#a3d1c6',
+              DEFAULT: '#6EB5A5',   // Verde menta atualizado para #6EB5A5
+              dark: '#6EB5A5',      // Verde institucional atualizado para #6EB5A5
+              lightbg: '#F3F6F5',   // Off-white Sage Gray
+            },
+            accent: {
+              DEFAULT: '#E76F51',   // Coral/Laranja de destaque
+              hover: '#d65f42',
+            },
+            dark: '#212529',        // Grafite escuro
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            title: ['Poppins', 'sans-serif']
+          },
+          animation: {
+            'float': 'float 3s ease-in-out infinite',
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-8px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style type="text/css">
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Poppins', sans-serif;
+    }
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #F3F6F5;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #6EB5A5;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #E76F51;
+    }
+
+    /* Motion Design Premium Classes */
+    .btn-premium {
+      transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), background-color 0.4s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.4s cubic-bezier(0.25, 1, 0.5, 1) !important;
+      will-change: transform;
+    }
+    .btn-premium:active {
+      transform: scale(0.96) !important;
+    }
+    .btn-premium-grow:hover {
+      transform: translateY(-2px) scale(1.02);
+    }
+    .btn-premium-spring:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px -5px rgba(231, 111, 81, 0.3);
+    }
+
+    /* Hover flutuante com sombra menta premium para os cards da galeria */
+    .gallery-card {
+      transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1), box-shadow 0.6s cubic-bezier(0.25, 1, 0.5, 1) !important;
+      will-change: transform, box-shadow;
+    }
+    .gallery-card:hover {
+      transform: translateY(-8px) scale(1.02) !important;
+      box-shadow: 0 20px 40px -15px rgba(110, 181, 165, 0.45) !important;
+    }
+
+    /* Ticker Carrossel Infinito da Galeria */
+    .marquee-container {
+      overflow: hidden;
+      display: flex;
+      width: 100%;
+      position: relative;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .marquee-container::-webkit-scrollbar {
+      display: none;
+    }
+    .marquee-container::before, .marquee-container::after {
+      content: "";
+      height: 100%;
+      width: 80px;
+      position: absolute;
+      z-index: 2;
+      pointer-events: none;
+      top: 0;
+    }
+    .marquee-container::before {
+      left: 0;
+      background: linear-gradient(to right, white, transparent);
+    }
+    .marquee-container::after {
+      right: 0;
+      background: linear-gradient(to left, white, transparent);
+    }
+    .marquee-track {
+      display: flex;
+      gap: 1.5rem; /* gap-6 do Tailwind (24px) */
+      width: max-content;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .marquee-track::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .gallery-card {
+        transform: none !important;
+        transition: none !important;
+      }
+      .btn-premium {
+        transform: none !important;
+        transition: none !important;
+      }
+      #servicos-img-element {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      #servicos-image-overlay {
+        display: none !important;
+      }
+      * {
+        animation-delay: 0s !important;
+        animation-duration: 0s !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0s !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* Efeito de abertura suave do Menu Mobile */
+    #mobile-menu {
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      transform-origin: top;
+      display: none;
+    }
+    #mobile-menu.active {
+      display: block !important;
+      animation: slideDown 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: scaleY(0.93);
+      }
+      to {
+        opacity: 1;
+        transform: scaleY(1);
+      }
+    }
+
+    /* Animação de flutuação suave para a logo do mobile */
+    .animate-float-slow {
+      animation: floatLogo 4s ease-in-out infinite;
+    }
+    @keyframes floatLogo {
+      0%, 100% {
+        transform: translateY(-50%) translateY(-4px);
+      }
+      50% {
+        transform: translateY(-50%) translateY(4px);
+      }
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD Local Business -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PetStore",
+      "name": "Nisa PetCare - Banho e Tosa & Estética Canina",
+      "image": "Mídias/Nisa PetCare - Banho e Tosa  Estética Canina.jpg",
+      "@id": "https://nisapetcare.com.br/#petstore",
+      "url": "https://nisapetcare.com.br/",
+      "telephone": "+5511915002777",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "R. Padre Manuel Luís de Vergueiro, 31",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "postalCode": "03476-000",
+        "addressCountry": "BR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -23.575751133627584,
+        "longitude": -46.51847985092788
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "16:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/nisapetcare"
+      ]
+    }
+  </script>
+</head>
+<body class="bg-white text-dark antialiased">
+
+  <!-- ==================== HEADER ==================== -->
+  <header class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/95 backdrop-blur-md transition-all duration-300">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8">
+      
+      <!-- Logo -->
+      <a href="#inicio" class="flex items-center gap-2.5 group">
+        <div class="h-11 w-11 overflow-hidden rounded-full border border-gray-200 shadow-xs transition-transform duration-300 group-hover:scale-105">
+          <img src="Mídias/Nisa PetCare - Banho e Tosa  Estética Canina (8).jpeg" alt="Logo Nisa PetCare" class="h-full w-full object-cover">
+        </div>
+        <span class="text-2xl font-bold tracking-tight">
+          <span class="text-brand-dark">nisa</span><span class="text-gray-500 font-medium">petcare</span>
+        </span>
+      </a>
+
+      <!-- Desktop Navigation Menu (Centralizado) -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
+        <a href="#inicio" class="transition-colors hover:text-brand-dark">Início</a>
+        <a href="#servicos" class="transition-colors hover:text-brand-dark">Serviços</a>
+        <a href="#galeria" class="transition-colors hover:text-brand-dark">Galeria</a>
+        <a href="#depoimentos" class="transition-colors hover:text-brand-dark">Depoimentos</a>
+        <a href="#localizacao" class="transition-colors hover:text-brand-dark">Localização</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="hidden md:flex items-center">
+        <a href="https://wa.me/5511915002777" target="_blank" rel="noopener noreferrer" 
+           class="btn-premium inline-flex items-center justify-center rounded-xl bg-brand-dark px-6 py-2.5 text-sm font-bold text-white shadow-md shadow-brand-dark/15 transition-all duration-300 hover:bg-accent hover:shadow-lg hover:shadow-accent/20 hover:scale-102">
+          <span>Agendar Banho</span>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" type="button" class="inline-flex items-center justify-center rounded-lg p-2 text-gray-500 hover:bg-gray-100 hover:text-brand-dark md:hidden focus:outline-none" aria-label="Abrir Menu">
+        <i class="fa-solid fa-bars text-xl" id="menu-icon"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden border-t border-gray-100 bg-white px-6 py-4 shadow-inner md:hidden">
+      <nav class="flex flex-col gap-4 font-semibold text-gray-600">
+        <a href="#inicio" class="block py-2 transition-colors hover:text-brand-dark" onclick="toggleMenu()">Início</a>
+        <a href="#servicos" class="block py-2 transition-colors hover:text-brand-dark" onclick="toggleMenu()">Serviços</a>
+        <a href="#galeria" class="block py-2 transition-colors hover:text-brand-dark" onclick="toggleMenu()">Galeria</a>
+        <a href="#depoimentos" class="block py-2 transition-colors hover:text-brand-dark" onclick="toggleMenu()">Depoimentos</a>
+        <a href="#localizacao" class="block py-2 transition-colors hover:text-brand-dark" onclick="toggleMenu()">Localização</a>
+        <a href="https://wa.me/5511915002777" target="_blank" rel="noopener noreferrer" 
+           class="btn-premium mt-2 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand-dark py-3 text-center text-sm font-bold text-white transition-colors hover:bg-accent">
+          <i class="fa-brands fa-whatsapp text-lg"></i>
+          <span>Falar no WhatsApp</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION (VÍDEO NA ALTURA ORIGINAL SEM CORTES) ==================== -->
+  <section id="inicio" class="relative overflow-hidden bg-[#132220] text-white flex flex-col lg:block">
+    
+    <!-- Elemento de Vídeo em Fluxo (no mobile fica no topo, no desktop determina a altura) -->
+    <div class="w-full relative z-0">
+      <video id="hero-video" autoplay loop muted playsinline class="w-full h-auto block pointer-events-none">
+        <source src="Mídias/Nisa PetCare - Banho e Tosa  Estética Canina (2).mp4" type="video/mp4">
+        Seu navegador não suporta o formato de vídeo.
+      </video>
+      <!-- Logo redonda com transparência nos cantos posicionada ao lado do cachorro no mobile com animação de flutuação e sombra projetada -->
+      <div class="absolute right-[13%] top-[40%] w-[36%] max-w-[130px] aspect-square z-20 lg:hidden pointer-events-none animate-float-slow">
+        <img src="https://lh3.googleusercontent.com/Oby0WGUiecGsXm9asgIOE0xt_jtb_SjYXqcXlrWocYigcj_wEDdFD8p_qlZTDapoRTy7lj9iiH6LUnS9fw=w1688" 
+             alt="Logo Nisa PetCare Banho &amp; Tosa" 
+             class="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(19,34,32,0.22)]">
+      </div>
+      <!-- Gradiente de mesclagem sutil no mobile para transição suave do vídeo para o texto -->
+      <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#132220] to-transparent z-10 lg:hidden"></div>
+    </div>
+    
+    <!-- Camada de sobreposição (Overlay) - Apenas ativa no desktop por cima do vídeo -->
+    <div class="absolute inset-0 bg-gradient-to-r from-brand-dark/50 via-brand-dark/20 to-brand-dark/55 z-10 hidden lg:block"></div>
+
+    <!-- Conteúdo: No mobile empilha abaixo do vídeo (fluxo), no desktop fica absoluto sobre o vídeo -->
+    <div class="relative lg:absolute lg:inset-0 z-20 flex items-center bg-[#132220] lg:bg-transparent py-12 lg:py-0">
+      <div class="mx-auto w-full max-w-7xl px-6 sm:px-8">
+        <div class="grid gap-8 lg:grid-cols-12 items-center">
+          
+          <!-- Lado Esquerdo Vazio no Desktop (para o cãozinho aparecer livre na esquerda) -->
+          <div class="hidden lg:block lg:col-span-5 h-full"></div>
+
+          <!-- Lado Direito com o Bloco de Texto -->
+          <div id="hero-content" class="flex flex-col text-center lg:text-left lg:col-span-7 rounded-[2rem]">
+            <h1 class="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl leading-[1.12] lg:drop-shadow-[0_2px_8px_rgba(0,0,0,0.4)]">
+              O cuidado e o <span class="text-accent">"AUmor"</span> que seu melhor amigo merece.
+            </h1>
+            
+            <p class="mt-6 text-sm sm:text-base lg:text-lg text-gray-100 max-w-2xl leading-relaxed lg:drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">
+              Estética canina especializada e banho e tosa humanizado na Vila Antonieta, São Paulo. Nossa equipe oferece carinho, segurança e produtos premium para o bem-estar do seu pet.
+            </p>
+
+            <!-- CTA Button -->
+            <div class="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 lg:justify-start">
+              <a href="https://wa.me/5511915002777" target="_blank" rel="noopener noreferrer" 
+                 class="btn-premium btn-premium-spring inline-flex w-full sm:w-auto items-center justify-center gap-2.5 rounded-xl bg-accent px-8 py-4 text-base font-bold text-white shadow-lg shadow-accent/25 transition-all duration-300 hover:bg-accent-hover hover:-translate-y-0.5">
+                <i class="fa-brands fa-whatsapp text-xl"></i>
+                <span>Entrar em contato</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SEÇÃO 2: INTRODUÇÃO & SERVIÇOS (OFF-WHITE) ==================== -->
+  <section id="servicos" class="py-14 sm:py-20 bg-brand-lightbg">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8">
+      
+      <!-- Título de Introdução da Seção -->
+      <div id="servicos-title" class="text-center max-w-2xl mx-auto mb-16 js-reveal">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-dark">
+          Serviços pensados para a saúde do seu cãozinho
+        </h2>
+        <p class="mt-3 text-sm text-gray-500">
+          Da tosa padrão às sessões completas de estética, tudo é executado sob rigoroso padrão de higiene e cuidado individualizado.
+        </p>
+      </div>
+
+      <!-- Bloco Dividido (Layout Assimétrico da Referência) -->
+      <div class="grid gap-12 lg:grid-cols-12 items-center">
+        
+        <!-- Esquerda: Bloco de Texto com Linha Guia -->
+        <div id="servicos-left" class="lg:col-span-6 flex flex-col pr-0 lg:pr-8 js-reveal">
+          <!-- Detalhe decorativo com linha lateral verde escuro -->
+          <div class="border-l-4 border-brand-dark pl-6">
+            <h3 class="text-xl sm:text-2xl font-extrabold text-brand-dark">
+              Ajudamos a manter a rotina de cuidados do seu pet em dia
+            </h3>
+            <p class="mt-4 text-sm text-gray-500 leading-relaxed">
+              Trabalhamos com agendamento planejado para evitar o estresse de esperas prolongadas. Oferecemos quatro linhas principais de serviços com profissionais treinados em estética canina e técnicas de relaxamento animal.
+            </p>
+          </div>
+
+          <!-- Lista de Serviços Integrados (Grid de 2 colunas para melhor organização) -->
+          <div class="mt-8 grid gap-x-6 gap-y-5 sm:grid-cols-2">
+            
+            <!-- Banho e Tosa -->
+            <div class="flex gap-3 items-start">
+              <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-dark/10 text-brand-dark mt-0.5">
+                <i class="fa-solid fa-check text-xs"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-brand-dark">Banho e Tosa Completa</h4>
+                <p class="text-xxs text-gray-400 mt-0.5">Higiene completa, corte de unhas e limpeza de ouvidos.</p>
+              </div>
+            </div>
+
+            <!-- Tosa Estilizada -->
+            <div class="flex gap-3 items-start">
+              <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-dark/10 text-brand-dark mt-0.5">
+                <i class="fa-solid fa-check text-xs"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-brand-dark">Tosa Estilizada de Raça</h4>
+                <p class="text-xxs text-gray-400 mt-0.5">Cortes específicos respeitando o padrão da pelagem.</p>
+              </div>
+            </div>
+
+            <!-- Banho e Escovação -->
+            <div class="flex gap-3 items-start">
+              <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-dark/10 text-brand-dark mt-0.5">
+                <i class="fa-solid fa-check text-xs"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-brand-dark">Banho e Escovação</h4>
+                <p class="text-xxs text-gray-400 mt-0.5">Remoção de subpelo e desembaraço de pelos longos.</p>
+              </div>
+            </div>
+
+            <!-- Hidratação -->
+            <div class="flex gap-3 items-start">
+              <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-dark/10 text-brand-dark mt-0.5">
+                <i class="fa-solid fa-check text-xs"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-brand-dark">Hidratação e Nutrição</h4>
+                <p class="text-xxs text-gray-400 mt-0.5">Devolução de brilho, maciez e sedosidade à pelagem.</p>
+              </div>
+            </div>
+
+            <!-- Harmonização do rostinho -->
+            <div class="flex gap-3 items-start">
+              <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-dark/10 text-brand-dark mt-0.5">
+                <i class="fa-solid fa-check text-xs"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-brand-dark">Harmonização do Rostinho</h4>
+                <p class="text-xxs text-gray-400 mt-0.5">Tosa facial detalhada que valoriza a expressão do pet.</p>
+              </div>
+            </div>
+
+            <!-- Coloração artística -->
+            <div class="flex gap-3 items-start">
+              <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-dark/10 text-brand-dark mt-0.5">
+                <i class="fa-solid fa-check text-xs"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-brand-dark">Coloração Artística</h4>
+                <p class="text-xxs text-gray-400 mt-0.5">Pinturas temporárias seguras com tintas 100% pet-friendly.</p>
+              </div>
+            </div>
+
+            <!-- Cromoterapia & Spa Pet -->
+            <div class="flex gap-3 items-start sm:col-span-2">
+              <div class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-dark/10 text-brand-dark mt-0.5">
+                <i class="fa-solid fa-check text-xs"></i>
+              </div>
+              <div>
+                <h4 class="text-sm font-bold text-brand-dark">Cromoterapia &amp; Spa Pet</h4>
+                <p class="text-xxs text-gray-400 mt-0.5">Banhos relaxantes com luzes terapêuticas e massagens para alívio do estresse do cãozinho.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Link Discreto de CTA -->
+          <div class="mt-8">
+            <a href="https://wa.me/5511915002777?text=Olá,%20gostaria%20de%20saber%20valores%20para%20estética" target="_blank" rel="noopener noreferrer" 
+               class="btn-premium inline-flex items-center gap-2 text-sm font-bold text-accent hover:text-accent-hover transition-colors">
+              <span>Consultar tabela de preços por raça</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Direita: Imagem com Efeito de Revelação Premium -->
+        <div id="servicos-image" class="lg:col-span-6 flex justify-center relative overflow-hidden rounded-[2rem] shadow-xl">
+          <div class="relative w-full max-w-lg lg:max-w-none overflow-hidden rounded-[2rem] bg-brand-lightbg border border-white/40 aspect-[4/3] sm:aspect-[16/10] lg:aspect-[1/1] group">
+            <!-- Bloco de cor menta sólido de sobreposição para a animação de deslize -->
+            <div id="servicos-image-overlay" class="absolute inset-0 bg-brand z-20 transform scale-x-0 origin-left"></div>
+            
+            <!-- Foto do mascote feliz após banho e tosa gerada por AI -->
+            <img id="servicos-img-element" src="Mídias/pet_care_servicos.png" 
+                 alt="Mascote feliz após banho e tosa Nisa PetCare" 
+                 class="h-full w-full object-cover z-10 transition-transform duration-700 group-hover:scale-105"
+                 style="opacity: 0;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SEÇÃO 3: GALERIA DE FOTOS DOS CÃES ==================== -->
+  <section id="galeria" class="py-14 sm:py-20 bg-white overflow-hidden">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8">
+      
+      <!-- Título da Galeria de Fotos e Botão do Instagram (Largura total no topo) -->
+      <div id="galeria-title" class="flex flex-col md:flex-row md:items-end md:justify-between mb-12 js-reveal">
+        <div class="max-w-xl">
+          <span class="text-xxs font-extrabold uppercase tracking-widest text-accent">Nossos Clientes</span>
+          <h2 class="mt-3 text-3.5xl font-extrabold tracking-tight text-brand-dark sm:text-4xl">
+            Clientes Felizes da Nisa PetCare
+          </h2>
+          <p class="mt-4 text-sm text-gray-500">
+            Confira as fotos reais dos cãezinhos atendidos na nossa estética. Amor, paciência e visual renovado em cada sessão.
+        <div class="mt-6 md:mt-0">
+          <a href="https://www.instagram.com/nisapetcare" target="_blank" rel="noopener noreferrer" 
+             class="btn-premium inline-flex items-center gap-2 rounded-xl border border-gray-200 px-5 py-3 text-xs font-semibold text-gray-700 hover:border-brand hover:text-brand transition-colors duration-300">
+            <i class="fa-brands fa-instagram text-base"></i>
+            <span>Seguir no Instagram</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Carrossel Marquee Infinito com Rolagem Automática (Largura total fora do container max-w para efeito cinematográfico) -->
+    <div class="marquee-container py-4">
+      <div class="marquee-track">
+        
+        <!-- Bloco 1: 10 Cards na proporção original de estúdio -->
+        <div class="flex gap-6 shrink-0">
+          
+          <!-- Foto 1 - Pipoquinha -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/oezPj31hHOzCyVgMvrRBAORbgbuIFv8-_k--zdAv3B-aj4R-z0epiiG2KJP1p_DnT0dniszoec9lMutl2Q=w1688" 
+                 alt="Pipoquinha Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 2 - Craque de 4 Patas (Vickynha) -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/bMpE8EhH2SkaOPVafNzDGe_-v5X2DA12WfJNS9ejtbbk930Sfq18sHSX954ygxPzf21-f9j7oP17EsHTQg=w1688" 
+                 alt="Vickynha Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 3 - Jadezinha -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/P6zNK73CnStqosiSFULtDrzK2g7YxOFsqe_S9Rc7yVcaG8e_b0Ae4OEIzT5y9aHcO8LmYwGrr5bBVwCIGA=w1688" 
+                 alt="Jadezinha Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 4 - Loirinha -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/6X1fcuClTz5juVMJd4zPkL9SwG2VBfwDOhzvr4FVEfgSepzdO9pyoyb30Kp3PjMDIhw349BYYghqLVJYhQ=w1688" 
+                 alt="Loirinha Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 5 - Luninha -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/Rt181QvZqLfm_XQX5uQIoh62eRg9c2oDEQth36tGfGaR0fqtwIdTkHSNqfyMXa_6AS5PyvgOg1nw5wYl-w=w1688" 
+                 alt="Luninha Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 6 - Maya Maria -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/L7BYFi5obKCZCjeiKR4MtlNrBl6fLX11zf5x9Ez0uQuarnpUj04TdfPhC1zAacry4gclAUAGMD2r85U9=w1688" 
+                 alt="Maya Maria Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 7 - Mushu -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/1MuhoYE2mAsoK6hxRo-fXHcTM6RvRf7PT7CUNrNbofUBUsgSzoJTGPBvbBxpZFClOINDbjoFY4xvoN_L=w1688" 
+                 alt="Mushu Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 8 - Memel -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/tutMgh5tuUidePcjXPQsDZVm1s88dsO6j7DDD74Jb_I3IFkG7RGRqAwoA7ln6lwCB7xf6ovLAZHPnpJZ=w1688" 
+                 alt="Memel Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 9 - Brucinho -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/Hk0e7WHfoKAWPvGCNi2BatqZb89nkh8XHX30ICFmwVulfuRcafUkYx9X0XtNKoY8oUrgKkIvVUF0B-Yj=w1688" 
+                 alt="Brucinho Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 10 - Billynho -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/_JYnSKguVaesHH1MNjkwx9THOb8PDMYwBvfaLXBgYxc-CzmcTT3CzfulUChJ8QJfcJtL01jyWTAb7HSw=w1688" 
+                 alt="Billynho Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+        </div>
+
+        <!-- Bloco 2: Cópia Idêntica para Loop Infinito Contínuo -->
+        <div class="flex gap-6 shrink-0" aria-hidden="true">
+          
+          <!-- Foto 1 - Pipoquinha -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/oezPj31hHOzCyVgMvrRBAORbgbuIFv8-_k--zdAv3B-aj4R-z0epiiG2KJP1p_DnT0dniszoec9lMutl2Q=w1688" 
+                 alt="Pipoquinha Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 2 - Craque de 4 Patas (Vickynha) -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/bMpE8EhH2SkaOPVafNzDGe_-v5X2DA12WfJNS9ejtbbk930Sfq18sHSX954ygxPzf21-f9j7oP17EsHTQg=w1688" 
+                 alt="Vickynha Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 3 - Jadezinha -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/P6zNK73CnStqosiSFULtDrzK2g7YxOFsqe_S9Rc7yVcaG8e_b0Ae4OEIzT5y9aHcO8LmYwGrr5bBVwCIGA=w1688" 
+                 alt="Jadezinha Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 4 - Loirinha -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/6X1fcuClTz5juVMJd4zPkL9SwG2VBfwDOhzvr4FVEfgSepzdO9pyoyb30Kp3PjMDIhw349BYYghqLVJYhQ=w1688" 
+                 alt="Loirinha Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 5 - Luninha -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/Rt181QvZqLfm_XQX5uQIoh62eRg9c2oDEQth36tGfGaR0fqtwIdTkHSNqfyMXa_6AS5PyvgOg1nw5wYl-w=w1688" 
+                 alt="Luninha Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 6 - Maya Maria -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/L7BYFi5obKCZCjeiKR4MtlNrBl6fLX11zf5x9Ez0uQuarnpUj04TdfPhC1zAacry4gclAUAGMD2r85U9=w1688" 
+                 alt="Maya Maria Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 7 - Mushu -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/1MuhoYE2mAsoK6hxRo-fXHcTM6RvRf7PT7CUNrNbofUBUsgSzoJTGPBvbBxpZFClOINDbjoFY4xvoN_L=w1688" 
+                 alt="Mushu Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 8 - Memel -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/tutMgh5tuUidePcjXPQsDZVm1s88dsO6j7DDD74Jb_I3IFkG7RGRqAwoA7ln6lwCB7xf6ovLAZHPnpJZ=w1688" 
+                 alt="Memel Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 9 - Brucinho -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/Hk0e7WHfoKAWPvGCNi2BatqZb89nkh8XHX30ICFmwVulfuRcafUkYx9X0XtNKoY8oUrgKkIvVUF0B-Yj=w1688" 
+                 alt="Brucinho Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+          <!-- Foto 10 - Billynho -->
+          <div class="gallery-card w-[180px] h-[240px] sm:w-[220px] sm:h-[293px] shrink-0 relative overflow-hidden rounded-[2rem] bg-gray-50 shadow-md border border-white/40 group transition-all">
+            <img src="https://lh3.googleusercontent.com/_JYnSKguVaesHH1MNjkwx9THOb8PDMYwBvfaLXBgYxc-CzmcTT3CzfulUChJ8QJfcJtL01jyWTAb7HSw=w1688" 
+                 alt="Billynho Nisa PetCare" 
+                 class="w-full h-full object-cover block scale-[1.08] transition-transform duration-700 group-hover:scale-[1.15]"
+                 loading="lazy">
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SEÇÃO 3.5: DEPOIMENTOS (TESTIMONIALS) ==================== -->
+  <section id="depoimentos" class="py-14 sm:py-20 bg-brand-lightbg border-t border-gray-100">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8">
+      
+      <div id="depoimentos-title" class="text-center mb-16 js-reveal">
+        <span class="text-xxs font-extrabold uppercase tracking-widest text-accent">Depoimentos</span>
+        <h2 class="mt-3 text-3xl font-extrabold text-brand-dark sm:text-4xl">
+          O que dizem os tutores dos nossos clientes
+        </h2>
+        <p class="mt-4 text-sm text-gray-500 max-w-xl mx-auto">
+          A melhor prova do nosso carinho e dedicação está na satisfação de quem mais ama os pets. Confira a opinião de tutores reais.
+        </p>
+      </div>
+
+      <div id="depoimentos-list" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        
+        <!-- Depoimento 1 -->
+        <div class="flex flex-col justify-between p-8 rounded-[2rem] bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+          <div>
+            <div class="flex gap-1 text-[#f59e0b] mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-500 leading-relaxed italic">
+              "O Pipo é super medroso e costumava tremer antes de entrar no banho em outros locais. Na Nisa PetCare, ele entra abanando o rabo! O banho humanizado faz toda a diferença do mundo, eles tratam com muito respeito e amor."
+            </p>
+          </div>
+          <div class="mt-6 flex items-center gap-4 pt-6 border-t border-gray-50">
+            <div class="h-10 w-10 shrink-0 overflow-hidden rounded-full border border-gray-100 shadow-xs">
+              <img src="Mídias/tutor_camila.png" alt="Camila Rodrigues" class="h-full w-full object-cover">
+            </div>
+            <div>
+              <h4 class="text-xs sm:text-sm font-extrabold text-brand-dark">Camila Rodrigues</h4>
+              <p class="text-xxs text-gray-400 font-medium">Tutora do Pipo (Shih Tzu)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 2 -->
+        <div class="flex flex-col justify-between p-8 rounded-[2rem] bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+          <div>
+            <div class="flex gap-1 text-[#f59e0b] mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-500 leading-relaxed italic">
+              "Estética impecável e o Thor voltou super cheiroso. O atendimento no WhatsApp foi rápido e o fato de usarem apenas cosmética hipoalergênica faz com que a pele dele não fique irritada. Recomendo de olhos fechados!"
+            </p>
+          </div>
+          <div class="mt-6 flex items-center gap-4 pt-6 border-t border-gray-50">
+            <div class="h-10 w-10 shrink-0 overflow-hidden rounded-full border border-gray-100 shadow-xs">
+              <img src="Mídias/tutor_marcos.png" alt="Marcos Vinícius" class="h-full w-full object-cover">
+            </div>
+            <div>
+              <h4 class="text-xs sm:text-sm font-extrabold text-brand-dark">Marcos Vinícius</h4>
+              <p class="text-xxs text-gray-400 font-medium">Tutor do Thor (Golden Retriever)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Depoimento 3 -->
+        <div class="flex flex-col justify-between p-8 rounded-[2rem] bg-white border border-gray-100 shadow-sm transition-all duration-300 hover:shadow-md hover:-translate-y-1">
+          <div>
+            <div class="flex gap-1 text-[#f59e0b] mb-4">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-500 leading-relaxed italic">
+              "A tosa da Luna ficou perfeita, exatamente como eu pedi. Ela voltou linda, com um lacinho verde fofo e o pelo incrivelmente macio. Dá para ver o carinho e dedicação da equipe em cada pequeno detalhe!"
+            </p>
+          </div>
+          <div class="mt-6 flex items-center gap-4 pt-6 border-t border-gray-50">
+            <div class="h-10 w-10 shrink-0 overflow-hidden rounded-full border border-gray-100 shadow-xs">
+              <img src="Mídias/tutor_beatriz.png" alt="Beatriz Costa" class="h-full w-full object-cover">
+            </div>
+            <div>
+              <h4 class="text-xs sm:text-sm font-extrabold text-brand-dark">Beatriz Costa</h4>
+              <p class="text-xxs text-gray-400 font-medium">Tutora da Luna (Spitz Alemão)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SEÇÃO 6: PERGUNTAS FREQUENTES (FAQ) ==================== -->
+  <section class="py-14 sm:py-20 bg-brand-lightbg border-t border-gray-100">
+    <div class="mx-auto max-w-3xl px-6 sm:px-8">
+      
+      <div id="faq-title" class="text-center mb-12 js-reveal">
+        <span class="text-xxs font-extrabold uppercase tracking-widest text-accent">Perguntas Comuns</span>
+        <h2 class="mt-3 text-3xl font-extrabold text-brand-dark">FAQ Nisa PetCare</h2>
+      </div>
+
+      <div id="faq-list" class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="rounded-2xl bg-white border border-gray-100 shadow-xs overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between p-5 text-left focus:outline-none" onclick="toggleFaq(this)">
+            <span class="font-bold text-brand-dark text-sm sm:text-base">Como funciona o agendamento?</span>
+            <i class="fa-solid fa-chevron-down text-gray-400 text-xs transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 border-t border-gray-50 leading-relaxed">
+              O agendamento é feito de forma totalmente humanizada pelo WhatsApp. Você envia uma mensagem detalhando o porte do cão, a raça e o serviço desejado, e nós indicamos os melhores horários livres.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="rounded-2xl bg-white border border-gray-100 shadow-xs overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between p-5 text-left focus:outline-none" onclick="toggleFaq(this)">
+            <span class="font-bold text-brand-dark text-sm sm:text-base">Quais produtos de higiene vocês usam?</span>
+            <i class="fa-solid fa-chevron-down text-gray-400 text-xs transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 border-t border-gray-50 leading-relaxed">
+              Usamos apenas cosmética profissional premium para cães. Todos os shampoos e condicionadores são hipoalergênicos e adequados para peles sensíveis, prevenindo alergias pós-banho.
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="rounded-2xl bg-white border border-gray-100 shadow-xs overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between p-5 text-left focus:outline-none" onclick="toggleFaq(this)">
+            <span class="font-bold text-brand-dark text-sm sm:text-base">Vocês realizam serviços em cães grandes?</span>
+            <i class="fa-solid fa-chevron-down text-gray-400 text-xs transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+            <div class="p-5 pt-0 text-xs sm:text-sm text-gray-500 border-t border-gray-50 leading-relaxed">
+              Atendemos cães de todos os portes: pequeno, médio e grande. Solicitamos apenas que nos avise com antecedência para reservarmos o tempo adequado na banheira e no soprador.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SEÇÃO 4: FUNCIONAMENTO & LOCALIZAÇÃO ==================== -->
+  <section id="localizacao" class="py-14 sm:py-20 bg-white border-t border-gray-100 overflow-hidden relative">
+    
+    <!-- Fundo circular decorativo sutil -->
+    <div class="absolute -right-24 bottom-12 h-96 w-96 rounded-full bg-brand/10 blur-2xl -z-10"></div>
+
+    <div class="mx-auto max-w-7xl px-6 sm:px-8">
+      <div class="grid gap-12 lg:grid-cols-2 items-stretch">
+        
+        <!-- Esquerda: Informações de Horário e Localização -->
+        <div id="localizacao-content" class="flex flex-col justify-center js-reveal">
+          <span class="text-xxs font-extrabold uppercase tracking-widest text-brand-dark">Onde Estamos</span>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-brand-dark sm:text-4xl">
+            Vila Antonieta, São Paulo
+          </h2>
+          
+          <!-- Bloco do Endereço Textual -->
+          <div class="mt-6 flex gap-4 p-5 rounded-2xl bg-white border border-gray-100 shadow-xs">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-dark/10 text-brand-dark text-lg">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="text-sm">
+              <h4 class="font-extrabold text-brand-dark">Nisa PetCare Estética Canina</h4>
+              <p class="mt-1 text-gray-500 leading-relaxed">
+                R. Padre Manuel Luís de Vergueiro, 31 - Vila Antonieta, São Paulo - SP, 03476-000<br>
+                <span class="text-xxs text-gray-400 font-medium">Plus Code: CFFJ+JJ Vila Antonieta, São Paulo - SP</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Tabela de Horários Integrada -->
+          <div class="mt-6 overflow-hidden rounded-2xl bg-white border border-gray-100 shadow-xs text-xs font-semibold text-gray-600">
+            <div class="bg-gray-50 px-5 py-3 border-b border-gray-100 text-xxs uppercase tracking-wider text-gray-400">
+              Horários de Funcionamento
+            </div>
+            <div class="divide-y divide-gray-100">
+              <div class="flex justify-between px-5 py-3.5">
+                <span class="text-brand-dark">Segunda a Sexta-feira</span>
+                <span class="text-dark">09:00h às 18:00h</span>
+              </div>
+              <div class="flex justify-between px-5 py-3.5">
+                <span class="text-brand-dark">Sábado</span>
+                <span class="text-dark">09:00h às 16:00h</span>
+              </div>
+              <div class="flex justify-between px-5 py-3.5 text-gray-400">
+                <span>Domingo</span>
+                <span>Fechado</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Botões de GPS -->
+          <div class="mt-6 flex flex-col sm:flex-row gap-3">
+            <a href="https://www.google.com/maps/search/?api=1&query=-23.575751133627584,-46.51847985092788" target="_blank" rel="noopener noreferrer" 
+               class="btn-premium inline-flex items-center justify-center gap-2 rounded-xl bg-brand-dark text-white px-5 py-3 text-xs font-bold shadow-md hover:bg-dark transition-colors">
+              <i class="fa-solid fa-map"></i>
+              <span>Abrir no Google Maps</span>
+            </a>
+            <a href="https://waze.com/ul?ll=-23.575751133627584,-46.51847985092788&navigate=yes" target="_blank" rel="noopener noreferrer" 
+               class="btn-premium inline-flex items-center justify-center gap-2 rounded-xl border border-gray-200 bg-white text-gray-700 px-5 py-3 text-xs font-bold hover:border-brand-dark hover:text-brand-dark transition-colors">
+              <i class="fa-brands fa-waze text-[#33CCFF] text-sm"></i>
+              <span>Abrir no Waze</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Direita: Mapa Interativo do Google Maps -->
+        <div id="localizacao-map" class="h-96 lg:h-auto min-h-[380px] w-full flex js-reveal">
+          <div class="h-full w-full overflow-hidden rounded-[2rem] bg-gray-200 shadow-md border border-white/60">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.772591605389!2d-46.52066852479606!3d-23.575751133627584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5e0ebcfcf1a9%3A0xe10842db1ec93e3d!2sR.%20Padre%20Manuel%20Lu%C3%ADs%20de%20Vergueiro%2C%2031%20-%20Vila%20Antonieta%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2003476-000!5e0!3m2!1spt-BR!2sbr!4v1710000000000!5m2!1spt-BR!2sbr" 
+              class="h-full w-full min-h-[350px] border-0" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa Nisa PetCare Vila Antonieta">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BANNER FINAL CTA ==================== -->
+  <section class="py-14 sm:py-20 bg-brand-dark text-white relative overflow-hidden">
+    <div id="cta-banner" class="mx-auto max-w-4xl px-6 sm:px-8 text-center flex flex-col items-center relative z-10 js-reveal">
+      <h2 class="text-3xl font-extrabold sm:text-4xl leading-tight">
+        Agende o momento de bem-estar do seu pet
+      </h2>
+      <p class="mt-4 text-sm sm:text-base text-gray-200/80 max-w-xl">
+        Clique no botão abaixo para conversar conosco no WhatsApp. Agendamos e tiramos suas dúvidas na hora.
+      </p>
+      
+      <a href="https://wa.me/5511915002777" target="_blank" rel="noopener noreferrer" 
+         class="btn-premium btn-premium-spring mt-8 inline-flex items-center gap-2.5 rounded-xl bg-accent px-8 py-4 text-sm font-bold text-white shadow-xl shadow-accent/20 transition-all duration-300 hover:bg-accent-hover hover:scale-103">
+        <i class="fa-brands fa-whatsapp text-lg"></i>
+        <span>Agendar Agora</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-[#1a1d20] text-gray-400 pt-16 pb-8 border-t border-gray-800 text-sm">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8">
+      <div class="grid gap-10 md:grid-cols-4 mb-12">
+        
+        <div class="md:col-span-2">
+          <a href="#inicio" class="flex items-center gap-2.5 mb-6">
+            <div class="h-10 w-10 overflow-hidden rounded-full border border-gray-700 shadow-xs">
+              <img src="Mídias/Nisa PetCare - Banho e Tosa  Estética Canina (8).jpeg" alt="Logo Nisa PetCare" class="h-full w-full object-cover">
+            </div>
+            <span class="text-xl font-bold tracking-tight text-white">
+              <span class="text-brand">nisa</span>petcare
+            </span>
+          </a>
+          <p class="leading-relaxed max-w-sm text-xs text-gray-400">
+            Estética canina especializada e banho e tosa humanizado na Vila Antonieta, São Paulo. Cuidamos do seu amigo com respeito e amor.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="text-white text-xs font-extrabold uppercase tracking-wider mb-6">Links</h4>
+          <ul class="space-y-3 text-xs">
+            <li><a href="#inicio" class="hover:text-brand transition-colors">Início</a></li>
+            <li><a href="#servicos" class="hover:text-brand transition-colors">Serviços</a></li>
+            <li><a href="#galeria" class="hover:text-brand transition-colors">Galeria</a></li>
+            <li><a href="#depoimentos" class="hover:text-brand transition-colors">Depoimentos</a></li>
+            <li><a href="#localizacao" class="hover:text-brand transition-colors">Localização</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-white text-xs font-extrabold uppercase tracking-wider mb-6">Fale Conosco</h4>
+          <ul class="space-y-2 text-xs">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-phone text-brand"></i>
+              <span>(11) 91500-2777</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-brands fa-whatsapp text-brand"></i>
+              <a href="https://wa.me/5511915002777" class="hover:text-brand transition-colors">Chamar no WhatsApp</a>
+            </li>
+            <li class="flex items-center gap-2 mt-4">
+              <i class="fa-brands fa-instagram text-brand"></i>
+              <a href="https://www.instagram.com/nisapetcare" target="_blank" rel="noopener noreferrer" class="hover:text-brand transition-colors">@nisapetcare</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xxs text-gray-500">
+        <p>© 2026 Nisa PetCare. Todos os direitos reservados.</p>
+        <p>Desenvolvido por LF7 Marketing &amp; Automação 🐾</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== GREEN-SOCK (GSAP) ANIMATIONS CDN ==================== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    // Menu responsivo Drawer
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const menuIcon = document.getElementById('menu-icon');
+
+    function toggleMenu() {
+      mobileMenu.classList.toggle('hidden');
+      mobileMenu.classList.toggle('active');
+      if (mobileMenu.classList.contains('hidden')) {
+        menuIcon.className = 'fa-solid fa-bars text-xl';
+      } else {
+        menuIcon.className = 'fa-solid fa-xmark text-xl';
+      }
+    }
+
+    mobileMenuBtn.addEventListener('click', toggleMenu);
+
+    // FAQ Acordeon Toggle
+    function toggleFaq(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('i');
+      
+      document.querySelectorAll('.faq-content').forEach(item => {
+        if (item !== content) {
+          item.style.maxHeight = null;
+          item.previousElementSibling.querySelector('i').classList.remove('rotate-180');
+        }
+      });
+
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+        icon.classList.remove('rotate-180');
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+        icon.classList.add('rotate-180');
+      }
+    }
+
+    // Scroll Header Styling
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      if (window.scrollY > 40) {
+        header.classList.add('shadow-md', 'py-3');
+        header.classList.remove('py-4');
+      } else {
+        header.classList.remove('shadow-md', 'py-3');
+        header.classList.add('py-4');
+      }
+    });
+
+    // --- GSAP ANIMATIONS & INTERACTIVE MOTION ---
+    if (window.gsap && window.ScrollTrigger) {
+      try {
+        gsap.registerPlugin(ScrollTrigger);
+
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!prefersReducedMotion) {
+          // 1. Zoom-out cinemático no vídeo da Hero ao carregar (Foco visual)
+          gsap.fromTo('#hero-video', 
+            { scale: 1.15 }, 
+            { scale: 1.0, duration: 3.5, ease: 'expo.out' }
+          );
+
+          // 2. Animação de entrada fluida para os textos da Hero (staggered delay)
+          gsap.fromTo('#hero-content > *', 
+            { opacity: 0, y: 40 }, 
+            { opacity: 1, y: 0, duration: 1.4, ease: 'power4.out', stagger: 0.18, delay: 0.3 }
+          );
+
+          // 3. Revelação progressiva da Seção de Serviços
+          gsap.from('#servicos-title > *', {
+            scrollTrigger: {
+              trigger: '#servicos',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            y: 35,
+            duration: 1.2,
+            ease: 'power4.out',
+            stagger: 0.15
+          });
+
+          gsap.from('#servicos-left > *', {
+            scrollTrigger: {
+              trigger: '#servicos-left',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            y: 35,
+            duration: 1.2,
+            ease: 'power4.out',
+            stagger: 0.12
+          });
+
+          // 3.1 Revelação de Bloco Premium (Block Reveal Effect) na Imagem de Serviços
+          const servicesTl = gsap.timeline({
+            scrollTrigger: {
+              trigger: '#servicos-image',
+              start: 'top 80%'
+            }
+          });
+
+          // Define os estados iniciais no JS para segurança
+          gsap.set('#servicos-image-overlay', { scaleX: 0, transformOrigin: 'left' });
+          gsap.set('#servicos-img-element', { opacity: 0, scale: 1.15 });
+
+          servicesTl
+            // Desliza a cor menta cobrindo o bloco
+            .to('#servicos-image-overlay', {
+              scaleX: 1,
+              duration: 0.6,
+              ease: 'power3.inOut'
+            })
+            // Altera a origem do transform do overlay para a direita para sair do bloco
+            .set('#servicos-image-overlay', { transformOrigin: 'right' })
+            // Revela a imagem definindo opacidade como 1
+            .set('#servicos-img-element', { opacity: 1 })
+            // Desliza a cor menta para fora
+            .to('#servicos-image-overlay', {
+              scaleX: 0,
+              duration: 0.6,
+              ease: 'power3.inOut'
+            })
+            // Faz o zoom-out cinemático na imagem do cãozinho simultaneamente
+            .to('#servicos-img-element', {
+              scale: 1,
+              duration: 1.4,
+              ease: 'power3.out'
+            }, '-=0.5');
+
+          // 4. Seção Galeria (Staggering acentuado de revelação nas 10 fotos dos cães)
+          gsap.from('#galeria-title', {
+            scrollTrigger: {
+              trigger: '#galeria',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            y: 35,
+            duration: 1.2,
+            ease: 'power4.out'
+          });
+
+          gsap.from('.marquee-container', {
+            scrollTrigger: {
+              trigger: '#galeria',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            y: 50,
+            duration: 1.4,
+            ease: 'power4.out'
+          });
+
+          // 4.1 Seção Depoimentos (Staggering de revelação nos cards)
+          gsap.from('#depoimentos-title', {
+            scrollTrigger: {
+              trigger: '#depoimentos',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            y: 35,
+            duration: 1.2,
+            ease: 'power4.out'
+          });
+
+          gsap.from('#depoimentos-list > div', {
+            scrollTrigger: {
+              trigger: '#depoimentos-list',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            y: 40,
+            duration: 1.2,
+            ease: 'power4.out',
+            stagger: 0.12
+          });
+
+          // 5. Seção FAQ (Staggering de acordeons)
+          gsap.from('#faq-title', {
+            scrollTrigger: {
+              trigger: '#faq-title',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            y: 35,
+            duration: 1.0,
+            ease: 'power4.out'
+          });
+
+          gsap.from('#faq-list > div', {
+            scrollTrigger: {
+              trigger: '#faq-list',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            y: 35,
+            duration: 1.0,
+            ease: 'power4.out',
+            stagger: 0.12
+          });
+
+          // 6. Seção Localização (Efeito bidirecional suave)
+          gsap.from('#localizacao-content', {
+            scrollTrigger: {
+              trigger: '#localizacao',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            x: -50,
+            duration: 1.2,
+            ease: 'power4.out'
+          });
+
+          gsap.from('#localizacao-map', {
+            scrollTrigger: {
+              trigger: '#localizacao',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            x: 50,
+            duration: 1.2,
+            ease: 'power4.out'
+          });
+
+          // 7. Banner Final CTA
+          gsap.from('#cta-banner > *', {
+            scrollTrigger: {
+              trigger: '#cta-banner',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            y: 40,
+            duration: 1.2,
+            ease: 'power4.out',
+            stagger: 0.18
+          });
+
+          // 8. Marquee Galeria (Rolagem contínua infinita ultra-suave via GSAP)
+          const marqueeTrack = document.querySelector('.marquee-track');
+          if (marqueeTrack) {
+            const startMarquee = () => {
+              const trackWidth = marqueeTrack.scrollWidth;
+              const halfWidth = trackWidth / 2;
+              
+              // Define o tween contínuo infinito
+              const tween = gsap.to(marqueeTrack, {
+                x: -halfWidth,
+                duration: 40, // Velocidade ideal de transição
+                ease: 'none',
+                repeat: -1,
+                overwrite: 'auto'
+              });
+              
+              // Pausar ao passar o mouse e retomar ao sair
+              marqueeTrack.addEventListener('mouseenter', () => tween.pause());
+              marqueeTrack.addEventListener('mouseleave', () => tween.play());
+            };
+
+            // Executa após carregamento para cálculo exato de largura
+            if (document.readyState === 'complete') {
+              startMarquee();
+            } else {
+              window.addEventListener('load', startMarquee);
+            }
+          }
+        }
+      } catch (e) {
+        console.warn("GSAP/ScrollTrigger falhou ao inicializar: ", e);
+      }
+    } else {
+      console.warn("GSAP CDN não carregado corretamente.");
+    }
+  </script>
+</body>
+</html>
