@@ -279,11 +279,13 @@
       </a>
 
       <!-- Desktop Navigation Menu (Centralizado) -->
-      <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-gray-600">
+      <nav class="hidden md:flex items-center gap-6 lg:gap-8 text-sm font-semibold text-gray-600">
         <a href="#inicio" class="transition-colors hover:text-brand-dark">Início</a>
         <a href="#servicos" class="transition-colors hover:text-brand-dark">Serviços</a>
+        <a href="#sobre" class="transition-colors hover:text-brand-dark">Sobre</a>
         <a href="#galeria" class="transition-colors hover:text-brand-dark">Galeria</a>
         <a href="#depoimentos" class="transition-colors hover:text-brand-dark">Depoimentos</a>
+        <a href="#agendamento" class="transition-colors hover:text-brand-dark">Agendar</a>
         <a href="#localizacao" class="transition-colors hover:text-brand-dark">Localização</a>
       </nav>
 
@@ -306,8 +308,10 @@
       <nav class="flex flex-col gap-4 font-semibold text-gray-600">
         <a href="#inicio" class="block py-2 transition-colors hover:text-brand-dark" onclick="toggleMenu()">Início</a>
         <a href="#servicos" class="block py-2 transition-colors hover:text-brand-dark" onclick="toggleMenu()">Serviços</a>
+        <a href="#sobre" class="block py-2 transition-colors hover:text-brand-dark" onclick="toggleMenu()">Sobre</a>
         <a href="#galeria" class="block py-2 transition-colors hover:text-brand-dark" onclick="toggleMenu()">Galeria</a>
         <a href="#depoimentos" class="block py-2 transition-colors hover:text-brand-dark" onclick="toggleMenu()">Depoimentos</a>
+        <a href="#agendamento" class="block py-2 transition-colors hover:text-brand-dark" onclick="toggleMenu()">Agendar</a>
         <a href="#localizacao" class="block py-2 transition-colors hover:text-brand-dark" onclick="toggleMenu()">Localização</a>
         <a href="https://wa.me/5511915002777" target="_blank" rel="noopener noreferrer" 
            class="btn-premium mt-2 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-brand-dark py-3 text-center text-sm font-bold text-white transition-colors hover:bg-accent">
@@ -511,6 +515,56 @@
     </div>
   </section>
 
+  <!-- ==================== SEÇÃO 2.5: SOBRE NÓS (CORES INVERTIDAS - BRANCO) ==================== -->
+  <section id="sobre" class="py-14 sm:py-20 bg-white">
+    <div class="mx-auto max-w-7xl px-6 sm:px-8">
+      <div class="grid gap-12 lg:grid-cols-12 items-center">
+        <!-- Esquerda: Imagem com efeito premium -->
+        <div id="sobre-image" class="lg:col-span-5 flex justify-center order-2 lg:order-1 js-reveal">
+          <div class="relative w-full max-w-md overflow-hidden rounded-[2rem] bg-brand-lightbg border border-gray-100 shadow-xl aspect-square group">
+            <img src="Mídias/Nisa PetCare - Banho e Tosa  Estética Canina.jpg" 
+                 alt="Espaço Nisa PetCare" 
+                 class="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105">
+          </div>
+        </div>
+        
+        <!-- Direita: Texto Institucional -->
+        <div id="sobre-content" class="lg:col-span-7 flex flex-col justify-center order-1 lg:order-2 js-reveal">
+          <span class="text-xxs font-extrabold uppercase tracking-widest text-accent">Nossa História</span>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-brand-dark sm:text-4xl">
+            O Amor e Respeito que seu Pet Merece
+          </h2>
+          <p class="mt-6 text-sm text-gray-500 leading-relaxed">
+            A Nisa PetCare nasceu com o propósito claro de transformar a rotina de banho e tosa em um momento agradável e relaxante para o seu melhor amigo. Acreditamos que a estética canina vai muito além da beleza; trata-se de saúde, higiene e bem-estar emocional.
+          </p>
+          <p class="mt-4 text-sm text-gray-500 leading-relaxed">
+            Aqui, aplicamos o conceito de <strong>banho humanizado</strong>: respeitamos o tempo, a personalidade e os limites de cada pet. Não utilizamos gaiolas de secagem e trabalhamos com produtos hipoalergênicos de qualidade premium. Cada cãozinho é tratado de forma individualizada com muito afeto, paciência e atenção aos detalhes.
+          </p>
+          
+          <!-- Selos de Diferenciais -->
+          <div class="mt-8 grid gap-4 grid-cols-2">
+            <div class="flex items-center gap-3 p-4 rounded-2xl bg-brand-lightbg border border-gray-100">
+              <div class="text-brand-dark text-xl"><i class="fa-solid fa-heart"></i></div>
+              <span class="text-xs font-bold text-brand-dark">Banho Humanizado</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 rounded-2xl bg-brand-lightbg border border-gray-100">
+              <div class="text-brand-dark text-xl"><i class="fa-solid fa-sparkles"></i></div>
+              <span class="text-xs font-bold text-brand-dark">Cosmética Premium</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 rounded-2xl bg-brand-lightbg border border-gray-100">
+              <div class="text-brand-dark text-xl"><i class="fa-solid fa-ban"></i></div>
+              <span class="text-xs font-bold text-brand-dark">Sem Gaiolas</span>
+            </div>
+            <div class="flex items-center gap-3 p-4 rounded-2xl bg-brand-lightbg border border-gray-100">
+              <div class="text-brand-dark text-xl"><i class="fa-solid fa-graduation-cap"></i></div>
+              <span class="text-xs font-bold text-brand-dark">Equipe Certificada</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ==================== SEÇÃO 3: GALERIA DE FOTOS DOS CÃES ==================== -->
   <section id="galeria" class="py-14 sm:py-20 bg-white overflow-hidden">
     <div class="mx-auto max-w-7xl px-6 sm:px-8">
@@ -524,6 +578,8 @@
           </h2>
           <p class="mt-4 text-sm text-gray-500">
             Confira as fotos reais dos cãezinhos atendidos na nossa estética. Amor, paciência e visual renovado em cada sessão.
+          </p>
+        </div>
         <div class="mt-6 md:mt-0">
           <a href="https://www.instagram.com/nisapetcare" target="_blank" rel="noopener noreferrer" 
              class="btn-premium inline-flex items-center gap-2 rounded-xl border border-gray-200 px-5 py-3 text-xs font-semibold text-gray-700 hover:border-brand hover:text-brand transition-colors duration-300">
@@ -809,6 +865,92 @@
     </div>
   </section>
 
+  <!-- ==================== SEÇÃO 3.7: AGENDAMENTO INTERATIVO ==================== -->
+  <section id="agendamento" class="py-14 sm:py-20 bg-white border-t border-gray-100">
+    <div class="mx-auto max-w-4xl px-6 sm:px-8">
+      
+      <div id="agendamento-title" class="text-center mb-12 js-reveal">
+        <span class="text-xxs font-extrabold uppercase tracking-widest text-accent">Pré-Agendamento</span>
+        <h2 class="mt-3 text-3xl font-extrabold text-brand-dark sm:text-4xl">
+          Agende um Horário
+        </h2>
+        <p class="mt-4 text-sm text-gray-500 max-w-xl mx-auto">
+          Preencha os dados do seu cãozinho para simular e gerar o texto do agendamento que será enviado direto para o nosso WhatsApp.
+        </p>
+      </div>
+
+      <!-- Card do Formulário -->
+      <div id="agendamento-card" class="bg-brand-lightbg border border-gray-100 rounded-[2rem] p-6 sm:p-10 shadow-sm js-reveal">
+        <form id="whatsapp-booking-form" onsubmit="sendBookingMessage(event)" class="space-y-6">
+          
+          <div class="grid gap-6 sm:grid-cols-2">
+            <!-- Nome do Tutor -->
+            <div>
+              <label for="tutor-name" class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-2">Seu Nome</label>
+              <input type="text" id="tutor-name" required placeholder="Ex: Maria Silva" 
+                     class="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 placeholder-gray-400 focus:border-brand-dark focus:outline-none focus:ring-1 focus:ring-brand-dark transition-all">
+            </div>
+
+            <!-- Nome do Pet -->
+            <div>
+              <label for="pet-name" class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-2">Nome do Pet</label>
+              <input type="text" id="pet-name" required placeholder="Ex: Pipo" 
+                     class="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 placeholder-gray-400 focus:border-brand-dark focus:outline-none focus:ring-1 focus:ring-brand-dark transition-all">
+            </div>
+          </div>
+
+          <div class="grid gap-6 sm:grid-cols-2">
+            <!-- Raça e Porte -->
+            <div>
+              <label for="pet-details" class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-2">Raça e Porte</label>
+              <input type="text" id="pet-details" required placeholder="Ex: Shih Tzu - Pequeno" 
+                     class="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 placeholder-gray-400 focus:border-brand-dark focus:outline-none focus:ring-1 focus:ring-brand-dark transition-all">
+            </div>
+
+            <!-- Serviço Desejado -->
+            <div>
+              <label for="service-type" class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-2">Serviço de Interesse</label>
+              <select id="service-type" required
+                      class="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-600 focus:border-brand-dark focus:outline-none focus:ring-1 focus:ring-brand-dark transition-all">
+                <option value="" disabled selected>Selecione um serviço</option>
+                <option value="Banho e Tosa Completa">Banho e Tosa Completa</option>
+                <option value="Banho e Higiênica">Banho e Higiênica (Tosa de Higiene)</option>
+                <option value="Banho e Escovação">Banho e Escovação</option>
+                <option value="Tosa Estilizada de Raça">Tosa Estilizada de Raça</option>
+                <option value="Hidratação e Nutrição">Hidratação e Nutrição</option>
+                <option value="Cromoterapia e Spa Pet">Cromoterapia e Spa Pet</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Dia e Período de Preferência -->
+          <div>
+            <label for="time-preference" class="block text-xs font-bold text-brand-dark uppercase tracking-wider mb-2">Preferência de Período</label>
+            <select id="time-preference" required
+                    class="w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-gray-600 focus:border-brand-dark focus:outline-none focus:ring-1 focus:ring-brand-dark transition-all">
+              <option value="" disabled selected>Selecione sua preferência</option>
+              <option value="Segunda a Sexta - Manhã (9h às 12h)">Segunda a Sexta - Manhã (9h às 12h)</option>
+              <option value="Segunda a Sexta - Tarde (12h às 18h)">Segunda a Sexta - Tarde (12h às 18h)</option>
+              <option value="Sábado - Manhã (9h às 12h)">Sábado - Manhã (9h às 12h)</option>
+              <option value="Sábado - Tarde (12h às 16h)">Sábado - Tarde (12h às 16h)</option>
+            </select>
+          </div>
+
+          <!-- Botão de Enviar -->
+          <div class="pt-4">
+            <button type="submit" 
+                    class="btn-premium btn-premium-spring w-full inline-flex items-center justify-center gap-2.5 rounded-xl bg-accent px-8 py-4 text-base font-bold text-white shadow-lg shadow-accent/25 transition-all duration-300 hover:bg-accent-hover hover:-translate-y-0.5">
+              <i class="fa-brands fa-whatsapp text-xl"></i>
+              <span>Enviar Pré-Agendamento</span>
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
   <!-- ==================== SEÇÃO 6: PERGUNTAS FREQUENTES (FAQ) ==================== -->
   <section class="py-14 sm:py-20 bg-brand-lightbg border-t border-gray-100">
     <div class="mx-auto max-w-3xl px-6 sm:px-8">
@@ -988,8 +1130,10 @@
           <ul class="space-y-3 text-xs">
             <li><a href="#inicio" class="hover:text-brand transition-colors">Início</a></li>
             <li><a href="#servicos" class="hover:text-brand transition-colors">Serviços</a></li>
+            <li><a href="#sobre" class="hover:text-brand transition-colors">Sobre</a></li>
             <li><a href="#galeria" class="hover:text-brand transition-colors">Galeria</a></li>
             <li><a href="#depoimentos" class="hover:text-brand transition-colors">Depoimentos</a></li>
+            <li><a href="#agendamento" class="hover:text-brand transition-colors">Agendar</a></li>
             <li><a href="#localizacao" class="hover:text-brand transition-colors">Localização</a></li>
           </ul>
         </div>
@@ -1077,6 +1221,34 @@
       }
     });
 
+    // Função para pré-agendamento WhatsApp
+    function sendBookingMessage(event) {
+      event.preventDefault();
+      
+      const tutorName = document.getElementById('tutor-name').value.trim();
+      const petName = document.getElementById('pet-name').value.trim();
+      const petDetails = document.getElementById('pet-details').value.trim();
+      const serviceType = document.getElementById('service-type').value;
+      const timePreference = document.getElementById('time-preference').value;
+      
+      if (!tutorName || !petName || !petDetails || !serviceType || !timePreference) {
+        alert('Por favor, preencha todos os campos do formulário.');
+        return;
+      }
+      
+      const message = `Olá, Nisa PetCare! Gostaria de solicitar um pré-agendamento pelo site:\n\n` +
+                      `🐾 *Nome do Tutor:* ${tutorName}\n` +
+                      `🐶 *Nome do Pet:* ${petName}\n` +
+                      `🏷️ *Raça/Porte:* ${petDetails}\n` +
+                      `✨ *Serviço:* ${serviceType}\n` +
+                      `📅 *Preferência de Período:* ${timePreference}`;
+                      
+      const encodedMessage = encodeURIComponent(message);
+      const whatsappUrl = `https://wa.me/5511915002777?text=${encodedMessage}`;
+      
+      window.open(whatsappUrl, '_blank');
+    }
+
     // --- GSAP ANIMATIONS & INTERACTIVE MOTION ---
     if (window.gsap && window.ScrollTrigger) {
       try {
@@ -1113,6 +1285,30 @@
           gsap.from('#servicos-left > *', {
             scrollTrigger: {
               trigger: '#servicos-left',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            y: 35,
+            duration: 1.2,
+            ease: 'power4.out',
+            stagger: 0.12
+          });
+
+          // Animação da Seção Sobre Nós
+          gsap.from('#sobre-image', {
+            scrollTrigger: {
+              trigger: '#sobre',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            x: -50,
+            duration: 1.2,
+            ease: 'power4.out'
+          });
+
+          gsap.from('#sobre-content > *', {
+            scrollTrigger: {
+              trigger: '#sobre',
               start: 'top 85%'
             },
             opacity: 0,
@@ -1203,6 +1399,29 @@
             duration: 1.2,
             ease: 'power4.out',
             stagger: 0.12
+          });
+
+          // Animação da Seção de Agendamento
+          gsap.from('#agendamento-title', {
+            scrollTrigger: {
+              trigger: '#agendamento',
+              start: 'top 85%'
+            },
+            opacity: 0,
+            y: 35,
+            duration: 1.0,
+            ease: 'power4.out'
+          });
+
+          gsap.from('#agendamento-card', {
+            scrollTrigger: {
+              trigger: '#agendamento',
+              start: 'top 80%'
+            },
+            opacity: 0,
+            y: 40,
+            duration: 1.2,
+            ease: 'power4.out'
           });
 
           // 5. Seção FAQ (Staggering de acordeons)
