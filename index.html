@@ -265,15 +265,15 @@
 <body class="bg-white text-dark antialiased">
 
   <!-- ==================== HEADER ==================== -->
-  <header class="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/95 backdrop-blur-md transition-all duration-300">
-    <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 sm:px-8">
+  <header id="main-header" class="sticky top-0 z-50 w-full border-b border-transparent bg-white transition-all duration-500">
+    <div id="header-container" class="mx-auto flex max-w-7xl items-center justify-between px-6 py-2.5 sm:px-8 transition-all duration-500">
       
       <!-- Logo -->
       <a href="#inicio" class="flex items-center gap-2.5 group">
-        <div class="h-11 w-11 overflow-hidden rounded-full border border-gray-200 shadow-xs transition-transform duration-300 group-hover:scale-105">
+        <div class="h-9 w-9 overflow-hidden rounded-full border border-gray-200 shadow-xs transition-transform duration-300 group-hover:scale-105">
           <img src="Mídias/Nisa PetCare - Banho e Tosa  Estética Canina (8).jpeg" alt="Logo Nisa PetCare" class="h-full w-full object-cover">
         </div>
-        <span class="text-2xl font-bold tracking-tight">
+        <span class="text-xl font-bold tracking-tight">
           <span class="text-brand-dark">nisa</span><span class="text-gray-500 font-medium">petcare</span>
         </span>
       </a>
@@ -1208,15 +1208,23 @@
       }
     }
 
-    // Scroll Header Styling
+    // Scroll Header Styling (Efeito vidro premium e encolhimento)
+    const mainHeader = document.getElementById('main-header');
+    const headerContainer = document.getElementById('header-container');
+
     window.addEventListener('scroll', () => {
-      const header = document.querySelector('header');
-      if (window.scrollY > 40) {
-        header.classList.add('shadow-md', 'py-3');
-        header.classList.remove('py-4');
+      if (window.scrollY > 20) {
+        mainHeader.classList.remove('bg-white', 'border-transparent');
+        mainHeader.classList.add('bg-white/75', 'backdrop-blur-lg', 'border-gray-200/50', 'shadow-md', 'shadow-brand-dark/5');
+        
+        headerContainer.classList.remove('py-2.5');
+        headerContainer.classList.add('py-1.5');
       } else {
-        header.classList.remove('shadow-md', 'py-3');
-        header.classList.add('py-4');
+        mainHeader.classList.add('bg-white', 'border-transparent');
+        mainHeader.classList.remove('bg-white/75', 'backdrop-blur-lg', 'border-gray-200/50', 'shadow-md', 'shadow-brand-dark/5');
+        
+        headerContainer.classList.remove('py-1.5');
+        headerContainer.classList.add('py-2.5');
       }
     });
 
@@ -1390,8 +1398,8 @@
 
           gsap.from('#depoimentos-list > div', {
             scrollTrigger: {
-              trigger: '#depoimentos-list',
-              start: 'top 85%'
+              trigger: '#depoimentos',
+              start: 'top 80%'
             },
             opacity: 0,
             y: 40,
@@ -1504,11 +1512,15 @@
               marqueeTrack.addEventListener('mouseleave', () => tween.play());
             };
 
-            // Executa após carregamento para cálculo exato de largura
+            // Executa após carregamento para cálculo exato de largura e atualização do ScrollTrigger
             if (document.readyState === 'complete') {
               startMarquee();
+              ScrollTrigger.refresh();
             } else {
-              window.addEventListener('load', startMarquee);
+              window.addEventListener('load', () => {
+                startMarquee();
+                ScrollTrigger.refresh();
+              });
             }
           }
         }
